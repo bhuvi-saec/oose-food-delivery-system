@@ -19,11 +19,11 @@ npm start
 
 1. Put the project in a GitHub repository and push the changes.
 2. In [Render](https://render.com), create a **Blueprint** and select the repository.
-3. Review the `render.yaml` settings and deploy the `little-leaf-delivery` service.
-4. The blueprint configures a persistent disk for orders and generates a private `ADMIN_API_KEY`. In the service's environment settings, reveal and save that key somewhere secure; do not put it in the browser or commit it to GitHub.
-5. Open the public `.onrender.com` URL after the deployment health check succeeds. Render's persistent disk requires the paid Starter instance configured in the blueprint.
+3. Review the `render.yaml` settings and deploy the `little-leaf-delivery` service on the Free plan.
+4. The blueprint generates a private `ADMIN_API_KEY`. In the service's environment settings, reveal and save that key somewhere secure; do not put it in the browser or commit it to GitHub.
+5. Open the public `.onrender.com` URL after the deployment health check succeeds. Free services may take time to wake after inactivity.
 
-The app listens on the hosting provider's `PORT` and `0.0.0.0`; the `/api/health` endpoint is its deployment health check. Local orders are stored in `data/orders.json`. In production, the Render disk stores them in `/var/data/orders.json`, so redeployments do not remove them.
+The app listens on the hosting provider's `PORT` and `0.0.0.0`; the `/api/health` endpoint is its deployment health check. Orders are stored in `data/orders.json` by default. Render's Free service has no persistent disk, so orders stored on its local filesystem can be lost when the service restarts, sleeps, or redeploys. Use a persistent database or disk before relying on this for real orders.
 
 ## REST API
 
