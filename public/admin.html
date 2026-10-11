@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbf8f2">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Order desk — Little Leaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;500i;600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/admin.css">
+    <script src="/admin.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement"><span>LITTLE LEAF</span><span class="announcement-dot">✳</span><span>RESTAURANT ORDER DESK</span></div>
+    <header class="site-header admin-header">
+      <a class="brand" href="/" aria-label="Little Leaf home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M38.5 9.5c-15.1.3-25.1 4.2-26.8 14.3-1.4 8.4 6.5 13.1 14.2 9.3C36 28 37.9 17.5 38.5 9.5Z" fill="currentColor"/><path d="M11 39c5.3-10 12-15.6 22.5-22" stroke="#FBF8F2" stroke-width="2.5" stroke-linecap="round"/></svg></span><span class="brand-copy"><span class="brand-name">little leaf</span><span class="brand-caption">KITCHEN & GOOD THINGS</span></span></a>
+      <a class="admin-store-link" href="/">VISIT THE STOREFRONT ↗</a>
+    </header>
+    <main class="admin-main">
+      <section class="admin-intro">
+        <span class="eyebrow"><span class="eyebrow-line"></span> BEHIND THE COUNTER</span>
+        <h1>A lovely day starts<br>with <em>good orders.</em></h1>
+        <p>Your little control room for incoming orders and happy deliveries.</p>
+      </section>
+      <section class="admin-login" aria-labelledby="login-heading">
+        <div class="login-copy"><span class="login-icon" aria-hidden="true">✳</span><div><h2 id="login-heading">A quick kitchen check-in</h2><p>Enter the private admin key from your hosting dashboard. It isn’t saved on this device.</p></div></div>
+        <form id="admin-login-form" class="admin-login-form">
+          <label for="admin-key">Your private admin key</label>
+          <div class="admin-key-row"><input id="admin-key" name="key" type="password" autocomplete="current-password" required placeholder="Paste the key from your hosting settings"><button type="submit">OPEN THE ORDER DESK <span aria-hidden="true">↗</span></button></div>
+          <p class="admin-error" id="login-error" role="alert" hidden></p>
+        </form>
+      </section>
+      <section class="admin-dashboard" id="admin-dashboard" hidden>
+        <div class="dashboard-heading"><div><span class="eyebrow"><span class="eyebrow-line"></span> THE DAILY GOOD STUFF</span><h2>Order <em>board.</em></h2></div><button class="refresh-button" id="refresh-orders" type="button"><span aria-hidden="true">↻</span> REFRESH ORDERS</button></div>
+        <p class="dashboard-message" id="dashboard-message" role="status" aria-live="polite"></p>
+        <div class="order-stats">
+          <div class="stat-card"><span>READY FOR THE KITCHEN</span><strong id="active-count">0</strong></div>
+          <div class="stat-card"><span>AWAITING A LITTLE LOVE</span><strong id="queued-count">0</strong></div>
+          <div class="stat-card"><span>ORDERS TAKEN TODAY</span><strong id="today-count">0</strong></div>
+        </div>
+        <div class="orders-list" id="orders-list" aria-live="polite"></div>
+      </section>
+      <aside class="admin-security"><span aria-hidden="true">♡</span><p>This private kitchen desk is protected by your server-side admin key. Keep it out of the storefront and never share it publicly.</p></aside>
+    </main>
+    <footer class="admin-footer"><a href="/">LITTLE LEAF STOREFRONT ↗</a><span>MADE WITH A LITTLE EXTRA LOVE IN PUNE. ✳</span></footer>
+  </body>
+</html>

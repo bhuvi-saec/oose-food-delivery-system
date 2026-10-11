@@ -1,0 +1,90 @@
+[
+  {
+    "id": "burrata-bowl",
+    "name": "The Sunday Bowl",
+    "description": "Whipped burrata, heirloom tomatoes, basil oil & toasted sourdough.",
+    "price": 429,
+    "category": "Bowls",
+    "tag": "Bestseller",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Colorful seasonal bowl with fresh greens and vegetables",
+    "vegetarian": true
+  },
+  {
+    "id": "miso-salmon",
+    "name": "Honey Miso Salmon",
+    "description": "Glazed salmon, avocado, edamame & ginger rice. Your new favorite.",
+    "price": 569,
+    "category": "Bowls",
+    "tag": "Chef's pick",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Fresh salmon entree with seasonal sides",
+    "vegetarian": false
+  },
+  {
+    "id": "green-goddess",
+    "name": "Green Goddess Toast",
+    "description": "Smashed avo, herby cashew cream & chili crunch on sourdough.",
+    "price": 319,
+    "category": "Sourdough",
+    "tag": "Plant-based",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Avocado toast on fresh sourdough bread",
+    "vegetarian": true
+  },
+  {
+    "id": "truffle-mushroom",
+    "name": "Truffle Mushroom Melt",
+    "description": "Wild mushrooms, aged cheddar, truffle butter. Melty magic.",
+    "price": 389,
+    "category": "Sourdough",
+    "tag": null,
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Grilled cheese sandwich with a golden toasted crust",
+    "vegetarian": true
+  },
+  {
+    "id": "crispy-cauliflower",
+    "name": "Crispy Cauliflower",
+    "description": "Golden, sticky, a little spicy. With cool tahini yogurt.",
+    "price": 289,
+    "category": "Small plates",
+    "tag": "A little spicy",
+    "image": "https://images.unsplash.com/photo-1568584711271-6c929fb49f1b?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Golden roasted vegetables served with a creamy dipping sauce",
+    "vegetarian": true
+  },
+  {
+    "id": "burrata-peaches",
+    "name": "Peach & Burrata Plate",
+    "description": "Ripe summer peaches, creamy burrata, mint & honey.",
+    "price": 459,
+    "category": "Small plates",
+    "tag": "Seasonal",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Fresh seasonal salad with bright colorful ingredients",
+    "vegetarian": true
+  },
+  {
+    "id": "lemon-tart",
+    "name": "Little Lemon Tart",
+    "description": "Silky lemon curd, buttery shortcrust, a cloud of cream.",
+    "price": 199,
+    "category": "Something sweet",
+    "tag": "House-made",
+    "image": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Golden lemon tart with a delicate pastry crust",
+    "vegetarian": true
+  },
+  {
+    "id": "berry-panna-cotta",
+    "name": "Vanilla Panna Cotta",
+    "description": "Real Madagascar vanilla, seasonal berries & a little love.",
+    "price": 229,
+    "category": "Something sweet",
+    "tag": null,
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85",
+    "imageAlt": "Creamy dessert topped with fresh berries",
+    "vegetarian": true
+  }
+]

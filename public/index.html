@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbf8f2">
+    <meta name="description" content="Good food, good mood. Order thoughtful, seasonal comfort food from Little Leaf, delivered fresh to your door in Pune.">
+    <title>Little Leaf — good food, good mood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span>GOOD FOOD, GOOD MOOD</span>
+      <span class="announcement-dot">✳</span>
+      <span>FREE DELIVERY ON ORDERS OVER ₹599</span>
+      <span class="announcement-dot">✳</span>
+      <span>FRESHLY MADE, ALWAYS</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Little Leaf home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M38.5 9.5c-15.1.3-25.1 4.2-26.8 14.3-1.4 8.4 6.5 13.1 14.2 9.3C36 28 37.9 17.5 38.5 9.5Z" fill="currentColor"/><path d="M11 39c5.3-10 12-15.6 22.5-22" stroke="#FBF8F2" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><span class="brand-name">little leaf</span><span class="brand-caption">KITCHEN & GOOD THINGS</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#menu">The menu</a>
+        <a href="#our-story">Our little story</a>
+      </nav>
+      <div class="header-actions">
+        <span class="location-label"><span aria-hidden="true">⌖</span> Pune, IN</span>
+        <button class="cart-button" id="open-cart" type="button" aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span>Bag</span><span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> A LITTLE BIT OF LOVELY, DELIVERED</span>
+          <h1 id="hero-title">Food that feels like <em>your happy place.</em></h1>
+          <p>Seasonal little plates. Big, warm-belly energy. Made with good things, just down the street.</p>
+          <a class="primary-link" href="#menu">FIND YOUR NEW FAVOURITE <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="avatar-stack" aria-hidden="true"><span>M</span><span>A</span><span>R</span></span><span><strong>4.9 out of 5</strong><br>from your lovely neighbours</span><span class="hero-stars" aria-label="five stars">★★★★★</span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="A fresh, colorful meal made with seasonal ingredients">
+          <div class="hero-image"></div>
+          <div class="hero-sticker"><span>MADE WITH</span><strong>a little<br>extra love</strong><span>✳ &nbsp; EVERY DAY &nbsp; ✳</span></div>
+          <div class="floating-note"><span class="floating-note-icon" aria-hidden="true">✳</span><span><strong>Fresh, always.</strong><br>Made when you order.</span></div>
+          <span class="hero-art-caption">SOMETHING GOOD IS COOKING ↗</span>
+        </div>
+        <div class="hero-bottom"><span>01 — GOOD INGREDIENTS</span><span>02 — ZERO SHORTCUTS</span><span>03 — EXTRA NAPKINS</span></div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+        <div class="section-heading">
+          <div><span class="eyebrow"><span class="eyebrow-line"></span> YOUR TABLE IS WAITING</span><h2 id="menu-heading">Made for a <em>good day.</em></h2></div>
+          <p>Good ingredients, happy combinations<br>and always, always made fresh.</p>
+        </div>
+        <div class="menu-toolbar">
+          <div class="category-list" id="categories" role="group" aria-label="Filter dishes by category">
+            <button class="category-chip is-active" type="button" data-category="All">A little of everything</button>
+          </div>
+          <label class="search-box"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.4 4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><input type="search" id="menu-search" placeholder="Find something lovely" aria-label="Search the menu"></label>
+        </div>
+        <div class="menu-grid" id="menu-grid" aria-live="polite"><div class="menu-message">Gathering all the good things…</div></div>
+        <p class="empty-search" id="empty-search" hidden>Nothing on the menu just yet. Try another search or category.</p>
+        <div class="menu-footnote"><span aria-hidden="true">✳</span> EVERYTHING IS PREPARED FRESH WHEN YOU ORDER. THAT'S OUR LITTLE PROMISE.</div>
+      </section>
+
+      <section class="story-section" id="our-story">
+        <div class="story-image" role="img" aria-label="Fresh produce thoughtfully prepared in the Little Leaf kitchen"></div>
+        <div class="story-copy"><span class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF IS SIMPLE</span><h2>A little more<br>thought. A lot more <em>flavour.</em></h2><p>We started Little Leaf with a simple idea: make the kind of food that turns an ordinary Tuesday into a little occasion. Fresh ingredients, happy hands, no shortcuts. Your place or ours — there’s always room at this table.</p><a href="#menu" class="text-link">COME ON IN <span aria-hidden="true">↗</span></a><span class="story-flower" aria-hidden="true">✳</span></div>
+      </section>
+
+      <section class="promise-strip" aria-label="Our promises"><div><span>✳</span><strong>Fresh, not fussy.</strong><p>Real ingredients, made to order.</p></div><div><span>♡</span><strong>From our kitchen to yours.</strong><p>Carefully packed, happily delivered.</p></div><div><span>☻</span><strong>Good food. Good neighbours.</strong><p>Made with love, right here in Pune.</p></div></section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="/" aria-label="Little Leaf home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M38.5 9.5c-15.1.3-25.1 4.2-26.8 14.3-1.4 8.4 6.5 13.1 14.2 9.3C36 28 37.9 17.5 38.5 9.5Z" fill="currentColor"/><path d="M11 39c5.3-10 12-15.6 22.5-22" stroke="#FBF8F2" stroke-width="2.5" stroke-linecap="round"/></svg></span><span class="brand-copy"><span class="brand-name">little leaf</span><span class="brand-caption">KITCHEN & GOOD THINGS</span></span></a><span>MADE WITH A LITTLE EXTRA LOVE IN PUNE. <span aria-hidden="true">✳</span></span><a href="#menu">BACK TO THE GOOD STUFF ↑</a></footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="drawer-title" aria-hidden="true" inert>
+      <div class="drawer-heading"><div><span class="eyebrow"><span class="eyebrow-line"></span> GOOD CHOICES</span><h2 id="drawer-title">Your little <em>bag.</em></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Close bag">×</button></div>
+      <div class="cart-content" id="cart-content"></div>
+      <div class="checkout-panel" id="checkout-panel" hidden>
+        <div class="checkout-intro"><span class="eyebrow"><span class="eyebrow-line"></span> ALMOST THERE</span><h3>Where should we bring it?</h3><p>Freshly made, lovingly delivered. Pay when it arrives.</p></div>
+        <form id="checkout-form">
+          <label for="customer-name">Your name</label><input id="customer-name" name="name" autocomplete="name" minlength="2" maxlength="80" placeholder="The name your neighbours call you" required>
+          <label for="customer-phone">Mobile number</label><div class="phone-input"><span>+91</span><input id="customer-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit number" required></div>
+          <label for="customer-address">Delivery address</label><textarea id="customer-address" name="address" autocomplete="street-address" minlength="10" maxlength="300" placeholder="Flat / house number, street, neighbourhood" required></textarea>
+          <label for="customer-notes">A little delivery note <span class="optional-label">OPTIONAL</span></label><input id="customer-notes" name="instructions" maxlength="240" placeholder="Gate code, landmark, extra napkins…">
+          <div class="payment-note"><span aria-hidden="true">♡</span><span><strong>Pay when the good stuff arrives.</strong><br>Cash on delivery</span></div>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="checkout-button" id="checkout-button" type="submit">PLACE MY ORDER <span aria-hidden="true">↗</span></button>
+          <p class="secure-note">By ordering, you’re supporting your lovely local kitchen.</p>
+        </form>
+      </div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
